@@ -1,0 +1,142 @@
+@import '@beqom/alto-ui/scss/variables.scss';
+@import '@beqom/alto-ui/scss/index.scss';
+
+html {
+  background-color: $coolgrey-10;
+}
+
+.App {
+  width: 60rem;
+  margin: auto;
+  max-width: 100%;
+  padding: $spacing-large;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Main {
+  flex: 1;
+  overflow: auto;
+}
+
+.Search {
+  margin-bottom: $spacing-large;
+}
+
+.Title {
+  color: $coolgrey-50;
+  padding-bottom: $spacing-small;
+  margin-bottom: $spacing-medium;
+  border-bottom: 1px solid $coolgrey-20;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+}
+
+.Title--category {
+  padding-bottom: 0;
+  border: 0;
+  font-size: $font-size-medium;
+}
+
+.Products {
+  margin-bottom: $spacing-large;
+}
+
+.Product__name {
+  flex: 1;
+}
+
+.Product__discount {
+  margin-right: $spacing-large;
+  padding: $spacing-x-small;
+  font-size: $font-size-small;
+  color: $white;
+  background-color: $red;
+  font-weight: $font-weight-semibold;
+  line-height: 1;
+}
+
+.Product__price {
+  margin-right: $spacing-large;
+  font-weight: normal;
+}
+
+.Product__price--old {
+  text-decoration: line-through;
+}
+
+.Cart {
+  width: 22rem;
+  padding-left: $spacing-large;
+  margin-left: $spacing-large;
+  border-left: 1px solid $coolgrey-20;
+  overflow: auto;
+}
+
+.Cart__items {
+  border-collapse: collapse;
+  font-size: $font-size-small;
+  width: 100%;
+}
+
+.Cart__items-header {
+  color: $coolgrey-50;
+  border-bottom: 1px solid $coolgrey-20;
+  padding: $spacing-x-small 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.Cart__items-header--name {
+  text-align: left;
+}
+
+.Cart__items-header--quantity {
+  width: 4rem;
+}
+
+.Cart__items-header--unit-price,
+.Cart__items-header--evaluated-total-price {
+  width: 3.5rem;
+}
+
+.Cart__items-header--action {
+  width: 3rem;
+}
+
+.Cart__item-cell {
+  line-height: 3;
+  padding: 0 $spacing-x-small;
+  text-align: right;
+}
+
+.Cart__item-cell--name {
+  text-align: left;
+}
+
+.Cart__item-cell--action {
+  line-height: 1;
+  text-align: center;
+}
+
+.Total {
+  display: flex;
+  justify-content: space-between;
+  margin: $spacing-medium 0;
+  padding: $spacing-small 0;
+  border-top: 1px solid $coolgrey-20;
+  border-bottom: 1px solid $coolgrey-20;
+}
+
+.Total__title {
+  color: $coolgrey-50;
+}
+
+.Checkout-button {
+  display: flex;
+  justify-content: flex-end;
+}
